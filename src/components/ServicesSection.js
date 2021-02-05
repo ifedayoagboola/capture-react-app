@@ -4,12 +4,10 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
-import Service from "../components/Service";
 
 const ServicesSection = () => {
   return (
     <div className="services">
-      <Service />
       <div className="description">
         <h2>
           High <span>quality </span> service
