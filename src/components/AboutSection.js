@@ -1,42 +1,39 @@
 import React from "react";
 import home1 from "../img/home1.png";
 
-// styled
-import styled from "styled-components";
-import {
-  StyledAbout,
-  StyledDescription,
-  StyledHide,
-  StyledImage,
-} from "../Style";
+//Framer motion
+import { motion } from "framer-motion";
+import { titleAnime, photoAnime } from "../pages/animation";
+
+import { About, Description, Hide } from "../Style";
 
 const AboutSection = () => {
   return (
-    <StyledAbout>
-      <StyledDescription>
-        <div className="title">
-          <StyledHide>
-            <h2>We work to make</h2>
-          </StyledHide>
-          <StyledHide>
-            <h2>
+    <About>
+      <Description>
+        <motion.div>
+          <Hide>
+            <motion.h2 variants={titleAnime}>We work to make</motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnime}>
               Your <span>dreams </span> come through
-            </h2>
-          </StyledHide>
-          <StyledHide>
-            <h2>true.</h2>
-          </StyledHide>
-        </div>
-        <p>
+            </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnime}>true.</motion.h2>
+          </Hide>
+        </motion.div>
+        <motion.p variants={titleAnime}>
           Contact us for any photography or videography ideas that you have. We
           have professionals with aamazing skills.
-        </p>
-        <button>Contact Us</button>
-      </StyledDescription>
-      <StyledImage>
+        </motion.p>
+        <motion.button variants={titleAnime}>Contact Us</motion.button>
+      </Description>
+      <motion.Image variants={photoAnime}>
         <img src={home1} alt="Guy holding camera" />
-      </StyledImage>
-    </StyledAbout>
+      </motion.Image>
+    </About>
   );
 };
 

@@ -6,12 +6,12 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 
 import styled from "styled-components";
-import { StyledAbout, StyledDescription, StyledImage } from "../Style";
+import { About, Description, Image } from "../Style";
 
 const ServicesSection = () => {
   return (
-    <StyledServices>
-      <StyledDescription>
+    <Services>
+      <Description>
         <h2>
           High <span>quality </span> service
         </h2>
@@ -45,15 +45,15 @@ const ServicesSection = () => {
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
         </Cards>
-      </StyledDescription>
-      <StyledImage>
+      </Description>
+      <Image>
         <img src={home2} alt="home2" />
-      </StyledImage>
-    </StyledServices>
+      </Image>
+    </Services>
   );
 };
 
-const StyledServices = styled(StyledAbout)`
+const Services = styled(About)`
   h2 {
     padding-bottom: 3rem;
   }

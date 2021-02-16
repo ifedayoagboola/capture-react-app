@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { StyledAbout } from "../Style";
+import { About } from "../Style";
+
+import Toggle from "./Toggle";
 
 const FaqSection = () => {
   return (
@@ -8,56 +10,63 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do I start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            dolorum.
-          </p>
+      <Toggle>
+        <div className="question">
+          <h4>How do I start?</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              dolorum.
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Daily Schedule</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            dolorum.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>Daily Schedule</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              dolorum.
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-
-      <div className="question">
-        <h4>Different payment Methods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            dolorum.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>Different payment Methods</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              dolorum.
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What products do you offer</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            dolorum.
-          </p>
+      </Toggle>
+      <Toggle>
+        <div className="question">
+          <h4>What products do you offer</h4>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              dolorum.
+            </p>
+          </div>
+          <div className="faq-line"></div>
         </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </Faq>
   );
 };
 
-const Faq = styled(StyledAbout)`
+const Faq = styled(About)`
   display: block;
   span {
     display: block;
