@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <h1>
@@ -31,7 +33,6 @@ const StyledNav = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding: 1rem 10rem;
   background: #282828;
   position: sticky;
   top: 0;
@@ -51,6 +52,21 @@ const StyledNav = styled.div`
   a {
     text-decoration: none;
     color: #fff;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 1rem;
+    #logo {
+      padding: 1rem;
+    }
+    ul {
+      padding: 1rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
   }
 `;
 
