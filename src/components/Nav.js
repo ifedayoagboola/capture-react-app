@@ -33,6 +33,9 @@ const StyledNav = styled.div`
   margin: auto;
   padding: 1rem 10rem;
   background: #282828;
+  position: sticky;
+  top: 0;
+
   #logo {
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
